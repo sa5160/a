@@ -1,12 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Scissors)
-})
-input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Square)
+    while (true) {
+        basic.showNumber(input.temperature())
+        basic.pause(2000)
+    }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.SmallSquare)
+    basic.showNumber(input.lightLevel())
+    basic.pause(2000)
 })
+basic.showIcon(IconNames.Yes)
 basic.forever(function () {
 	
 })
